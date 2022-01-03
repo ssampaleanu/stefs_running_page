@@ -43,9 +43,9 @@ English | [简体中文](https://github.com/yihong0618/running_page/blob/master/
 | [L1cardo](https://github.com/L1cardo)           | https://run.licardo.cn                     | Nike      |
 | [luckylele666](https://github.com/luckylele666) | https://0000928.xyz                        | Strava    |
 | [MFYDev](https://github.com/MFYDev)             | https://mfydev.run                         | Garmin-cn |
-| [Jim Gao](https://github.com/tianheg)             | https://run.yidajiabei.xyz/ | Keep |
+| [Jim Gao](https://github.com/tianheg)           | https://run.yidajiabei.xyz/                | Keep      |
 | [Eished](https://github.com/eished)             | https://run.iknow.fun                      | Keep      |
-| [Liuxin](https://github.com/liuxindtc)             | https://liuxin.run                   |  Nike      |
+| [Liuxin](https://github.com/liuxindtc)          | https://liuxin.run                         | Nike      |
 
 ## How it works
 
@@ -450,7 +450,7 @@ My secret is as follows
 Before submitting PR:
 
 - Format Python code with `black` (black .)
-- Format Python code with `isort` (isort --profile black  **/**/*.py)
+- Format Python code with `isort` (isort --profile black **/**/\*.py)
 
 # Special thanks
 
@@ -465,6 +465,7 @@ Before submitting PR:
 - @[gongzili456](https://github.com/gongzili456) for [motorcycle version](https://github.com/gongzili456/running_page)
 - @[ben-29](https://github.com/ben-29) for [different types support](https://github.com/ben-29/workouts_page)
 - @[geekplux](https://github.com/geekplux) for [different types support](https://github.com/geekplux/activities)
+
 # Support
 
 No need sponsor, just enjoy it.

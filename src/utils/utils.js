@@ -26,7 +26,7 @@ const formatPace = (d) => {
   return `${minutes}:${seconds.toFixed(0).toString().padStart(2, '0')}`;
 };
 
-const formatRunTime = (distance,pace) => {
+const formatRunTime = (distance, pace) => {
   if (Number.isNaN(distance) || Number.isNaN(pace)) {
     return '0min';
   }
@@ -34,9 +34,9 @@ const formatRunTime = (distance,pace) => {
   const minutes = Math.floor(formatPace * distance);
   if (minutes === 0) {
     const seconds = Math.floor((formatPace * distance - minutes) * 60.0);
-    return seconds + 's';
+    return `${seconds}s`;
   }
-  return minutes + 'min';
+  return `${minutes}min`;
 };
 
 // for scroll to the map
@@ -120,27 +120,7 @@ const geoJsonForRuns = (runs) => ({
 const geoJsonForMap = () => chinaGeojson;
 
 const titleForRun = (run) => {
-  const runDistance = run.distance / 1000;
-  const runHour = +run.start_date_local.slice(11, 13);
-  if (runDistance > 20 && runDistance < 40) {
-    return RUN_TITLES.HALF_MARATHON_RUN_TITLE;
-  }
-  if (runDistance >= 40) {
-    return RUN_TITLES.FULL_MARATHON_RUN_TITLE;
-  }
-  if (runHour >= 0 && runHour <= 10) {
-    return RUN_TITLES.MORNING_RUN_TITLE;
-  }
-  if (runHour > 10 && runHour <= 14) {
-    return RUN_TITLES.MIDDAY_RUN_TITLE;
-  }
-  if (runHour > 14 && runHour <= 18) {
-    return RUN_TITLES.AFTERNOON_RUN_TITLE;
-  }
-  if (runHour > 18 && runHour <= 21) {
-    return RUN_TITLES.EVENING_RUN_TITLE;
-  }
-  return RUN_TITLES.NIGHT_RUN_TITLE;
+    return run.name
 };
 
 const applyToArray = (func, array) => func.apply(Math, array);

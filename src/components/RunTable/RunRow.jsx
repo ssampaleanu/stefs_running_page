@@ -1,6 +1,6 @@
 import React from 'react';
 import { MAIN_COLOR } from 'src/utils/const';
-import { formatPace, titleForRun, formatRunTime  } from 'src/utils/utils';
+import { formatPace, titleForRun, formatRunTime } from 'src/utils/utils';
 import styles from './style.module.scss';
 
 const RunRow = ({ runs, run, locateActivity, runIndex, setRunIndex }) => {
@@ -11,7 +11,7 @@ const RunRow = ({ runs, run, locateActivity, runIndex, setRunIndex }) => {
 
   const heartRate = run.average_heartrate;
 
-  const runTime = formatRunTime(distance,pace);
+  const runTime = formatRunTime(distance, pace);
 
   // change click color
   const handleClick = (e, runs, run) => {

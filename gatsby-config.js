@@ -7,12 +7,12 @@ module.exports = {
     description: 'Personal site and blog',
     navLinks: [
       {
-        name: 'Blog',
-        url: 'https://yihong.run/running',
+        name: 'Repo',
+        url: 'https://github.com/ssampaleanu/stefs_running_page',
       },
       {
-        name: 'About',
-        url: 'https://github.com/yihong0618/running_page/blob/master/README-CN.md',
+        name: 'Stefan',
+        url: 'https://github.com/ssampaleanu',
       },
     ],
   },
